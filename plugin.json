@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "jurabibliotek",
+  "version": "1.0.0",
+  "description": "Brug Jurabibliotek, når du udarbejder eller gennemgår juridiske dokumenter via ChatGPT. ChatGPT stiller juridiske spørgsmål til Jurabibliotek via vores MCP-server og modtager tekster, som er forankrede i Jurabibliotek, og som har svar med links tilbage til Jurabibliotek, hvor du så eventuelt kan fortsætte din juridiske research. Jurisdiktion: Danmark.",
+  "author": {
+    "name": "Djøf Forlag",
+    "url": "https://www.jurabibliotek.dk"
+  },
+  "homepage": "https://www.jurabibliotek.dk",
+  "keywords": [
+    "legal",
+    "danish-law",
+    "legislation",
+    "contracts",
+    "word",
+    "jurabibliotek"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Jurabibliotek",
+        "shortDescription": "Dansk lovgivning",
+        "longDescription": "Brug Jurabibliotek, når du udarbejder eller gennemgår juridiske dokumenter via ChatGPT. ChatGPT stiller juridiske spørgsmål til Jurabibliotek via vores MCP-server og modtager tekster, som er forankrede i Jurabibliotek, og som har svar med links tilbage til Jurabibliotek, hvor du så eventuelt kan fortsætte din juridiske research. Jurisdiktion: Danmark.",
+        "developerName": "Djøf Forlag",
+        "category": "Productivity",
+        "capabilities": [],
+        "websiteURL": "https://www.jurabibliotek.dk",
+        "supportURL": "https://www.jurabibliotek.dk/kontakt",
+        "privacyPolicyURL": "https://www.jurabibliotek.dk/privatliv",
+        "termsOfServiceURL": "https://www.jurabibliotek.dk/betingelser",
+        "defaultPrompt": [
+          "Gennemgå denne ansættelseskontrakt for vilkår, der strider mod dansk lovgivning.",
+          "Er opsigelsesvarslet i denne kontrakt lovligt?",
+          "Hvilke krav stiller dansk lovgivning til et ansættelsesbevis?"
+        ],
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

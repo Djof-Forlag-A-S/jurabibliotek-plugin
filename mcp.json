@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "jurabibliotek": {
+      "type": "streamable-http",
+      "url": "https://mcp.jurabibliotek.dk/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "provided",
+              "clientId": "kqI1y6ewb9hXn20djM4U0ulIDsEtjAtNRmhLDWlX",
+              "tokenEndpointAuthMethod": "none"
+            },
+            "baseScopes": ["mcp"]
+          }
+        }
+      }
+    }
+  }
+}

@@ -30,3 +30,12 @@ names, amounts, dates or excerpts from your documents in a query. Your document 
 Claude applies the retrieved legislation to it there. The plugin stores nothing itself.
 
 Claude's answers are not legal advice. Have a qualified professional review anything you sign or file.
+
+## Packaging for OpenAI
+
+`plugin.json` and `mcp.json` are the OpenAI package manifests. `.claude-plugin/plugin.json` and `.mcp.json` are the
+Claude ones. Build the ZIP for the OpenAI plugin submission portal with:
+
+```sh
+zip -r jurabibliotek-openai.zip plugin.json mcp.json skills assets -x '*.DS_Store'
+```

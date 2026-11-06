@@ -1,22 +1,22 @@
 ---
 name: jurabibliotek-legal-documents
-description: Check legal documents against current Danish legislation with the Jurabibliotek connector. Use whenever the user reviews, drafts, edits, redlines, summarises or asks questions about a contract, agreement, policy, terms, letter, memo or other legal document, especially when working inside Word, and whenever a document or question touches Danish law (lov, bekendtgørelse, paragraf, §, stk.), rights, obligations, deadlines, termination, liability, employment, lease, consumer, company, data protection or compliance.
+description: Check legal documents against current Danish legislation with the Jurabibliotek tools. Use whenever the user reviews, drafts, edits, redlines, summarises or asks questions about a contract, agreement, policy, terms, letter, memo or other legal document, especially when working inside Word, and whenever a document or question touches Danish law (lov, bekendtgørelse, paragraf, §, stk.), rights, obligations, deadlines, termination, liability, employment, lease, consumer, company, data protection or compliance.
 ---
 
 # Jurabibliotek for legal documents
 
-When you work on a legal document, ground every legal point in Danish statutory text retrieved from the Jurabibliotek
-connector. Do this without waiting for the user to ask for it: a request to review, draft, edit or explain a legal
+When you work on a legal document, ground every legal point in Danish statutory text retrieved with the Jurabibliotek
+tools. Do this without waiting for the user to ask for it: a request to review, draft, edit or explain a legal
 document is a request to check it against the law.
 
-If the Jurabibliotek tools are not available, tell the user that the Jurabibliotek connector needs to be connected
-(Customize > Connectors, or the plugin's Connectors tab, then sign in with a Jurabibliotek subscription). Do not answer
-legal points from memory as if they were checked against the statute.
+If the Jurabibliotek tools are not available, tell the user that Jurabibliotek needs to be connected in the assistant's
+settings and that they need to sign in with a Jurabibliotek subscription. Do not answer legal points from memory as if
+they were checked against the statute.
 
 ## Privacy rules
 
-These rules apply to every Jurabibliotek tool call. The open Word document is the user's confidential material: it stays
-in the conversation and never goes into a query.
+These rules apply to every Jurabibliotek tool call. The user's document is confidential material: it stays in the
+conversation and never goes into a query.
 
 - Jurabibliotek only needs the legal question, never the facts of the user's case.
 - Never include names, CPR or CVR numbers, addresses, email addresses, phone numbers, case or file numbers, company names
@@ -64,6 +64,8 @@ issue.
 8. **Apply the law to the document** in your own analysis and answer as described below.
 
 ## Working in Word
+
+Follow these rules when the document is open in Word. Elsewhere, apply them to the document as far as the host allows.
 
 - When reviewing, tie each finding to the clause it concerns, state what the statute requires, and say whether the clause
   complies, conflicts with a mandatory rule, or is unclear.
