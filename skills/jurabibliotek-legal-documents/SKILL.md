@@ -57,10 +57,10 @@ issue.
    tools return. A document may involve several laws; finding one does not end the search. If several laws plausibly
    match, ask instead of choosing silently.
 7. **Collect citations.** For every section you mention, call `jurabibliotek_get_section_citations` and keep the section
-   permalink and every book it lists. Add `?h=1` directly before the `#` in each section permalink, unless it is already
-   there, so the section is highlighted on the page: `https://www.jurabibliotek.dk/renteloven#paragraf-3a` becomes
+   permalink. Add `?h=1` directly before the `#` in each section permalink, unless it is already there, so the section
+   is highlighted on the page: `https://www.jurabibliotek.dk/renteloven#paragraf-3a` becomes
    `https://www.jurabibliotek.dk/renteloven?h=1#paragraf-3a`. Use this form everywhere you link a law section: inline,
-   in Word comment replies and in the sources. Do not add it to book permalinks.
+   in Word comment replies and in the sources.
 8. **Apply the law to the document** in your own analysis and answer as described below.
 
 ## Working in Word
@@ -107,11 +107,6 @@ may follow the sources is a closing offer or question about the next step.
 
 - List every law section you mention, with the law name, § and stk., linked to the section permalink returned by
   `jurabibliotek_get_section_citations`.
-- List every book that `jurabibliotek_get_section_citations` returned for those sections, linked to its permalink on
-  jurabibliotek.dk. They provide further context and commentary.
-- When a book permalink ends in `#side-X`, write the page after the title as `<book title>, s. X`, using the X from the
-  permalink. Without that fragment, write the title alone; never guess a page. If the tool returned the same book with
-  different pages for different sections, list each page.
 - Use only the links the tools returned, changed only by adding `?h=1` to section permalinks as described in step 7.
   Never build or guess a URL.
 - If you end with an offer or a question about the next step, place it after the sources as the very last line of the
@@ -122,13 +117,8 @@ Example:
 ```markdown
 ## Kilder fra Jurabibliotek
 
-**Lovgivning**
 - [Funktionærloven § 2, stk. 2](<section permalink with ?h=1>)
 - [Ansættelsesbevisloven § 4, stk. 1](<section permalink with ?h=1>)
-
-**Litteratur**
-- [<book title from the tool>, s. 18](<book permalink ending in #side-18>)
-- [<book title from the tool>](<book permalink without a page>)
 
 Jeg kan foreslå konkrete rettelser til de røde punkter som ændringsforslag, du kan godkende ét ad gangen.
 ```

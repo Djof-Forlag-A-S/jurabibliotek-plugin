@@ -18,7 +18,7 @@ Review, draft and edit Danish legal documents against current Danish legislation
    with a valid Jurabibliotek subscription get access.
 3. In Claude for Word, open a document and ask, for example, "Gennemgå denne ansættelseskontrakt" or "Is the notice
    period in clause 7 lawful?". Claude searches the legislation, reads the relevant sections, and ends its answer with
-   a list of the law sections and books it relied on, linked to jurabibliotek.dk.
+   a list of the law sections it relied on, linked to jurabibliotek.dk.
 
 You can also invoke the skill directly by typing `/jurabibliotek-legal-documents` in the chat.
 
