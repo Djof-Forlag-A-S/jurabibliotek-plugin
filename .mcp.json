@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "jurabibliotek": {
+      "type": "http",
+      "url": "https://mcp.jurabibliotek.dk/mcp"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "jurabibliotek",
+  "displayName": "Jurabibliotek",
+  "version": "1.0.0",
+  "description": "Brug Jurabibliotek, når du udarbejder eller gennemgår juridiske dokumenter via Claude. Claude stiller juridiske spørgsmål til Jurabibliotek via vores MCP-server og modtager tekster, som er forankrede i Jurabibliotek, og som har svar med links tilbage til Jurabibliotek, hvor du så eventuelt kan fortsætte din juridiske research. Jurisdiktion: Danmark.",
+  "author": {
+    "name": "Djøf Forlag",
+    "url": "https://www.jurabibliotek.dk"
+  },
+  "homepage": "https://www.jurabibliotek.dk",
+  "keywords": [
+    "legal",
+    "danish-law",
+    "legislation",
+    "contracts",
+    "word",
+    "jurabibliotek"
+  ],
+  "privacyPolicyUrl": "https://www.jurabibliotek.dk/privatliv/",
+  "icon": "./assets/icon.png"
+}
