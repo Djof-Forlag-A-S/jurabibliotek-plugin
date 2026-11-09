@@ -58,9 +58,9 @@ issue.
 6. **Search for the concept, not only the words.** Never construct law IDs, section numbers or URLs; use the values the
    tools return. A document may involve several laws; finding one does not end the search. If several laws plausibly
    match, ask instead of choosing silently.
-7. **Collect citations.** For every section you mention, call `jurabibliotek_get_section_citations` and keep the section
-   permalink. Add `?h=1` directly before the `#` in each section permalink, unless it is already there, so the section
-   is highlighted on the page: `https://www.jurabibliotek.dk/renteloven#paragraf-3a` becomes
+7. **Collect citations.** For every section you mention, call `jurabibliotek_get_section_permalink` and keep the
+   returned permalink. Add `?h=1` directly before the `#` in each section permalink, unless it is already there, so the
+   section is highlighted on the page: `https://www.jurabibliotek.dk/renteloven#paragraf-3a` becomes
    `https://www.jurabibliotek.dk/renteloven?h=1#paragraf-3a`. Use this form everywhere you link a law section: inline,
    in Word comment replies and in the sources.
 8. **Apply the law to the document** in your own analysis, as described under "Analyse the statutory framework".
@@ -391,7 +391,7 @@ Omit unnecessary headings for simple questions, but retain the same sourcing and
 
 Link to the law where you use it, in addition to the sources at the end. Whenever a finding, suggested change or
 explanation relies on a law section, write the law name, § and stk. as a link to the section permalink returned by
-`jurabibliotek_get_section_citations`. Link each finding or suggested change on its own, so every one can be checked
+`jurabibliotek_get_section_permalink`. Link each finding or suggested change on its own, so every one can be checked
 without scrolling to the sources.
 
 - Keep links out of quoted statutory text; put the link in the words around the quotation.
@@ -410,7 +410,7 @@ have edited the document. Use the heading "Kilder fra Jurabibliotek" when answer
 The only thing that may follow the sources is a closing offer or question about the next step.
 
 - List every law section you mention, with the law name, § and stk., linked to the section permalink returned by
-  `jurabibliotek_get_section_citations`.
+  `jurabibliotek_get_section_permalink`.
 - Use only the links the tools returned, changed only by adding `?h=1` to section permalinks as described in step 7.
   Never build or guess a URL.
 - If you end with an offer or a question about the next step, place it after the sources as the very last line of the
