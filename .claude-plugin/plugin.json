@@ -8,6 +8,7 @@
     "url": "https://www.jurabibliotek.dk"
   },
   "homepage": "https://www.jurabibliotek.dk",
+  "repository": "https://github.com/Djof-Forlag-A-S/jurabibliotek-plugin",
   "keywords": [
     "legal",
     "danish-law",
@@ -16,6 +17,8 @@
     "word",
     "jurabibliotek"
   ],
+  "license": "LicenseRef-Jurabibliotek-Terms",
   "privacyPolicyUrl": "https://www.jurabibliotek.dk/privatliv/",
+  "termsOfServiceUrl": "https://www.jurabibliotek.dk/betingelser",
   "icon": "./assets/icon.png"
 }
