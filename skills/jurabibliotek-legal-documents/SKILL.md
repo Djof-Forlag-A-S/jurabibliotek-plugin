@@ -59,10 +59,7 @@ issue.
    tools return. A document may involve several laws; finding one does not end the search. If several laws plausibly
    match, ask instead of choosing silently.
 7. **Collect citations.** For every section you mention, call `jurabibliotek_get_section_permalink` and keep the
-   returned permalink. Add `?h=1` directly before the `#` in each section permalink, unless it is already there, so the
-   section is highlighted on the page: `https://www.jurabibliotek.dk/renteloven#paragraf-3a` becomes
-   `https://www.jurabibliotek.dk/renteloven?h=1#paragraf-3a`. Use this form everywhere you link a law section: inline,
-   in Word comment replies and in the sources.
+   returned permalink. Use it everywhere you link a law section: inline, in Word comment replies and in the sources.
 8. **Apply the law to the document** in your own analysis, as described under "Analyse the statutory framework".
 9. **Produce the requested work.** Follow the applicable guidance below: "Answer format", "Drafting legal documents" or
    "Reviewing and editing legal documents". For combined tasks, complete the legal research before making substantive
@@ -399,7 +396,7 @@ without scrolling to the sources.
 Example:
 
 ```markdown
-Opsigelsesvarslet i punkt 7 er kortere end det, [Funktionærloven § 2, stk. 2](<section permalink with ?h=1>) kræver,
+Opsigelsesvarslet i punkt 7 er kortere end det, [Funktionærloven § 2, stk. 2](<section permalink>) kræver,
 så jeg foreslår at forlænge det.
 ```
 
@@ -411,8 +408,7 @@ The only thing that may follow the sources is a closing offer or question about 
 
 - List every law section you mention, with the law name, § and stk., linked to the section permalink returned by
   `jurabibliotek_get_section_permalink`.
-- Use only the links the tools returned, changed only by adding `?h=1` to section permalinks as described in step 7.
-  Never build or guess a URL.
+- Use only the links the tools returned, unchanged. Never build or guess a URL.
 - If you end with an offer or a question about the next step, place it after the sources as the very last line of the
   answer, never above them.
 
@@ -421,8 +417,8 @@ Example:
 ```markdown
 ## Kilder fra Jurabibliotek
 
-- [Funktionærloven § 2, stk. 2](<section permalink with ?h=1>)
-- [Ansættelsesbevisloven § 4, stk. 1](<section permalink with ?h=1>)
+- [Funktionærloven § 2, stk. 2](<section permalink>)
+- [Ansættelsesbevisloven § 4, stk. 1](<section permalink>)
 
 Jeg kan foreslå konkrete rettelser til de røde punkter som ændringsforslag, du kan godkende ét ad gangen.
 ```
